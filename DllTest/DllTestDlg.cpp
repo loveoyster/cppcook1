@@ -172,8 +172,11 @@ HCURSOR CDllTestDlg::OnQueryDragIcon()
 }
 
 
-extern int add(int a,int b);
-extern int subtract(int a,int b);
+//extern int add(int a,int b);
+//extern int subtract(int a,int b);
+
+_declspec(dllimport)int add(int a,int b);
+
 void CDllTestDlg::OnBtnAdd() 
 {
 	CString str;
